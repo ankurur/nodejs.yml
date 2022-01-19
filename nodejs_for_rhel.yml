@@ -40,9 +40,9 @@
     - name: Install PM2
       command: chdir=/root/ npm install pm2 -g      
     
-    - name: Ansible create file if it doesn't exist example
+    - name: creat index.js file 
       file:
-        path: "/root/nodejs_ankur"
+        path: "/root/index.js"
         state: touch
      
     - name: copy content
